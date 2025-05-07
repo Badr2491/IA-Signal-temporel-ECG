@@ -44,29 +44,16 @@ Vous devriez voir des fichiers comme `100.atr`, `100.dat`, et `100.hea`, qui cor
 ## Utilisation du modèle
 
 Ce projet utilise un modèle de **Random Forest** pour détecter les anomalies cardiaques dans les signaux ECG. Le modèle est entraîné sur les données de la base MIT-BIH Arrhythmia, et peut être utilisé pour prédire des anomalies dans des signaux ECG de nouveaux enregistrements.
+cela est effectué en 4 étape : 
 
 ### Étape 1 : Préparation des données
 
-Assurez-vous d'extraire les battements ECG à l'aide des fichiers d'annotations associés, puis de les préparer sous forme de vecteurs à utiliser pour l'entraînement et la prédiction.
-
 ### Étape 2 : Entraînement du modèle
-
-Entraînez le modèle Random Forest en utilisant les battements extraits et étiquetés comme normaux ou anormaux. Vous pouvez ajuster les paramètres du modèle selon vos besoins.
 
 ### Étape 3 : Prédiction des anomalies
 
-Utilisez la fonction `predict_ecg()` pour charger un enregistrement ECG, extraire les battements, appliquer le modèle, et visualiser les anomalies détectées.
-
-Voici un exemple de code pour effectuer une prédiction :
-
-```python
-predict_ecg('100', clf)  # '100' fait référence à un enregistrement spécifique
-```
-
 ### Étape 4 : Visualisation
-
-Le modèle colorie les battements détectés comme normaux en vert et ceux détectés comme anormaux en rouge. Vous pouvez visualiser les résultats à l'aide de matplotlib.
-
+---
 ## Prérequis
 
 Avant de lancer le projet, assurez-vous d'avoir installé les bibliothèques suivantes :
